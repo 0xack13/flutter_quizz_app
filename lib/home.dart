@@ -326,4 +326,102 @@ var _questions = shuffle([
       {'answerText': 'To have a current Australian passport', 'score': false},
     ],
   },
+  {
+    'question':
+        'Which of the following is an example of contributing to the Australian community?',
+    'answers': [
+      {
+        'answerText':
+            'Volunteering or fundraising for a charity is a great opportunity to strengthen our community',
+        'score': false
+      },
+      {
+        'answerText':
+            'I should not make any effort to get to know other people',
+        'score': true
+      },
+      {
+        'answerText':
+            'People in Australia should not contribute to the community because Australia is a free country',
+        'score': false
+      },
+    ],
+  },
+  {
+    'question':
+        'Should people tolerate one another where they find that they disagree?',
+    'answers': [
+      {
+        'answerText': 'It is against the law to disagree with one another',
+        'score': false
+      },
+      {
+        'answerText':
+            'No, people only need to treat each other with respect if they agree with one another',
+        'score': true
+      },
+      {
+        'answerText':
+            'Yes, peaceful disagreement reflects Australian values in relation to mutual respect',
+        'score': false
+      },
+    ],
+  },
+  {
+    'question': 'Should people in Australia make an effort to learn English?',
+    'answers': [
+      {
+        'answerText':
+            'People in Australia should speak whichever language is most commonly spoken in their local neighbourhood',
+        'score': false
+      },
+      {
+        'answerText':
+            'There is no expectation to learn any particular language in Australia',
+        'score': true
+      },
+      {
+        'answerText':
+            'Yes, English is the national language of Australia and it helps to get an education, a job, and to integrate into the community',
+        'score': false
+      },
+    ],
+  },
+  {
+    'question':
+        'Which of these statements best demonstrates Australian values about freedom of expression?',
+    'answers': [
+      {
+        'answerText':
+            'Everyone can peacefully express their opinions within the law',
+        'score': false
+      },
+      {
+        'answerText': 'People with different views from me need to keep quiet',
+        'score': true
+      },
+      {'answerText': 'Only approved topics can be discussed', 'score': false},
+    ],
+  },
+  {
+    'question': 'Which of these is a role of the Governor-General?',
+    'answers': [
+      {'answerText': 'The appointment of state premiers', 'score': false},
+      {
+        'answerText':
+            'Signing all Bills passed by the Australian Parliament into law',
+        'score': false
+      },
+      {'answerText': 'The appointment of the Head of State', 'score': true},
+    ],
+  },
+  {
+    'question':
+        'Which arm of government has the power to interpret and apply laws?',
+    'answers': [
+      {'answerText': 'Legislative', 'score': false},
+      {'answerText': 'Judicial', 'score': true},
+      {'answerText': 'Executive', 'score': false},
+    ],
+  },
 ]);
