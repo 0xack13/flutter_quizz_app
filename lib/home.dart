@@ -1,8 +1,25 @@
 // ignore_for_file: prefer_const_constructors, duplicate_ignore
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_mentor_quiz_app/answer.dart';
+import 'dart:math';
+
+List shuffle(List items) {
+  var random = new Random();
+
+  // Go through all elements.
+  for (var i = items.length - 1; i > 0; i--) {
+    // Pick a pseudorandom number according to the list length
+    var n = random.nextInt(i + 1);
+
+    var temp = items[i];
+    items[i] = items[n];
+    items[n] = temp;
+  }
+  print(items);
+
+  return items;
+}
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -20,6 +37,7 @@ class _HomeState extends State<Home> {
   bool answerWasSelected = false;
   bool endOfQuiz = false;
   bool correctAnswerSelected = false;
+  // _questions = (_questions);
 
   void _nextQuestion() {
     setState(() {
@@ -174,7 +192,7 @@ class _HomeState extends State<Home> {
   }
 }
 
-const _questions = [
+var _questions = shuffle([
   {
     'question': 'What do we commemorate on Anzac Day??',
     'answers': [
@@ -308,4 +326,4 @@ const _questions = [
       {'answerText': 'To have a current Australian passport', 'score': false},
     ],
   },
-];
+]);
